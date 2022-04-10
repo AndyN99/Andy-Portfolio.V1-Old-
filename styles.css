@@ -1,0 +1,389 @@
+body{
+    background-color:rgb(15, 15, 15);
+}
+/* Global Values*/
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+form,
+button{
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 0.1em;
+}
+
+
+.container{
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.subcontainer{
+    width: 85%;
+    height: 85%;
+}
+.header{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.standard_header{
+    display: flex;
+    height: 15vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center; 
+}
+.standard_subheader{
+    display: flex;
+    width: 70%;
+    height: inherit;
+    justify-content: center;
+    border-bottom: 1px solid white;
+    font-family: 'Oswald', sans-serif;
+    font-size: 8em;
+    color:white;
+}
+ul{
+    list-style: none;
+}
+li{
+    display: inline;
+    font-weight: bold;
+    padding-right: 3%;
+    padding-left: 3%;
+    letter-spacing: 0.1em; 
+    
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+
+.page{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    margin-bottom: 10vh;
+    justify-content: center;
+}
+.buffer{
+    display: flex;
+    background-color:rgb(15, 15, 15);
+    height:15vh;
+    width: 100%;
+}
+
+
+
+
+
+
+/*Main Header*/
+.main_header{
+    height: 10vh;
+    position: fixed;
+    background-color: rgb(7, 7, 7);
+    color:white;
+    z-index: 1;
+}
+.nav_bar{
+    height: 100%;
+    align-items: center;
+    text-align: center;
+    font-size: 1.5em;
+    
+}
+.header_logo{
+    display: inline;
+    font-family: Calligraffitti;
+    font-size: 2em;
+    padding-left: 14%;
+    padding-right: 20%;
+    
+}
+@media (max-width: 100em)
+{
+    .nav_bar{
+        height: 100%;
+        align-items: center;
+        text-align: center;
+        font-size: 1em;
+    }
+}
+@media (max-width: 40em)
+{  
+    .nav_bar{
+        height: 100%;
+        align-items: center;
+        text-align: center;
+        font-size: 1em;
+    }
+}
+
+
+
+
+
+
+
+
+
+/*Home Page*/
+.home_page{
+    position: relative;
+    top: 10vh;
+}
+.home_info{
+    display: inline-flex;
+    width: 80%;
+    height: 95%;
+    align-items: center;
+}
+.home_text{  
+    display: block;
+    width: 50%;
+    height: 50%, auto;
+    font-family: 'Oswald', sans-serif;
+    margin-right: 5%;
+}
+.home_text h1{
+    color: white;
+    font-weight: bold;
+    font-size: 3.5em;
+    word-spacing: 0.2em;
+}
+#home_about_me{
+    word-spacing: 0.1em;
+    font-weight: normal;
+    font-size: 1.5em;
+    color: white;
+    margin-top: 5%;
+}
+.welcome_info{
+    display: flex;
+    width: 50%;
+    height: 70%;
+    align-items: center;
+    justify-content: center;
+    background-color: #2e2d2d;
+    border-radius: 3em;
+}
+#welcome_img {
+    height: 90%;
+    width: 90%;
+    border-radius: 3em;
+    
+   }
+#hello{
+    color: red;
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+/* About page*/
+.about_container{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5vh;
+}
+.about_info{
+    display: flex;
+    width: 40%;
+    height: auto;
+    background-color:#2e2d2d;
+    border-radius: 3em;
+    margin-right: 5em;
+    justify-content: center;
+}
+.about_info_text{
+    display: flex;
+    width: 90%;
+    height: 100%;
+    font-family: 'Oswald', sans-serif;
+    font-size: 2em;
+    letter-spacing: 0.1em ;
+    word-spacing: 0.2em;
+    color: #e0af31;
+    margin-bottom: 1em;
+}
+#about_hello{
+    font-size: 3em;
+    text-decoration: underline;
+    
+}
+.about_info_img{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+/* Project Page*/
+
+.slider{
+    display: grid;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    height: 55vh;
+    width: 100%;
+
+    place-items: center;
+    position: relative;
+    overflow: hidden;
+}
+.slide_track{
+    display: flex;
+    width: calc(33vw * 10);
+    animation: scroll 30s linear infinite;
+}
+@keyframes scroll{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(calc(-33vw * 5));
+    }
+}
+.slide{
+    height: 50vh;
+    width: 35vw;
+    align-items: center;
+    padding: .3%;
+    perspective: 100px;
+    background-color: #e0af31 ;
+    border-top: 3px solid #e23d3d;
+    border-bottom: 3px solid #e23d3d;
+    
+}
+
+.slide img{
+    height: inherit;
+    width: 100%;
+    transition: transform 1s;
+}
+.slide img:hover{
+    transform: translateZ( 0.25vh);
+    filter: grayscale(100%)
+}
+.project_layout{
+    
+    width: 70%;
+    height: 90%;
+    display: grid;
+    grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+.catalog_img{
+    display: flex;
+    background-color: #e0af31;
+    width: 90%;
+    height: 90%;
+    justify-content: center;
+    align-items: center;
+}
+.catalog_img img{
+    width: 95%;
+    height: 95%;
+    display: block; 
+    
+}
+
+
+
+
+
+/* Contact Page*/
+.contact_intro{
+    height: 15vh;
+    display: flex;
+    color: white;
+    font-size: 1.5em;
+}
+.contact_page{
+
+    align-items: center;
+    justify-content: left;
+    justify-content: space-evenly;
+}
+.contact_image_container{
+    display: flex;
+    height: 80%;
+    width: 40%;
+    position: relative;
+    background-color: #e0a309 ;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3em;
+}
+.contact_image_container img{
+    height: 90%;
+    width: 90%;
+    border-radius: 3em;
+}
+.contact_message_container{
+    displaY : flex;
+    height: 80%;
+    width: 40%;
+    position: relative;
+    color: white;
+    
+}
+.message_form{
+    width: 100%;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 3fr 1fr;
+    align-items: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 1.25em;
+    color: #e0af31;
+    font-weight: bold;
+}
+.message_form input, #message{
+    border: 2px solid #e0a309;
+}
+#email, #topic, #name{
+    width: 100%;
+    height: 3vh;
+}
+#message{
+    width: 100%;
+    height: 15vh;
+    
+}
+#sumbit{
+    width: 35%;
+    height: 8vh;
+    border: 2px solid #e0a309;
+    text-align: center;
+    font-size: 1.25em;
+    background-color: rgb(15, 15, 15);
+    color: #e0af31;
+    font-weight: bold;
+}
+#sumbit:hover{
+    cursor: pointer;
+}

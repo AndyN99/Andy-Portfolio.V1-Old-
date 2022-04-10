@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Andy's Portfolio</title>
+        <link href="styles.css" rel="stylesheet" >
+        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Calligraffitti" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Space+Mono&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Send+Flowers&family=Space+Mono&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <section>
+            <div class="main_header header">
+                <div class=" nav_bar subcontainer">
+                    <ul class="header_list">
+                        <li><a href="./index.html" style="text-decoration: underline">HOME</a></li>
+                        <li><a href ="about_Link.html">ABOUT</a></li>
+                        <li class="header_logo">A. N.</li>
+                        <li><a href="project_Link.html">PROJECT</a></li>
+                        <li><a href="contact_Link.html">CONTACT</a></li>
+                    </ul>
+                </div>
+            </div >
+            <div class="home_page page container">
+                <div class="home_info">
+                    <div class="home_text">
+                        <h1><span id="hello">HELLO!</span> I'M ANDY NGUYEN. A COMPUTER ENTHUSIAST </h1>
+                        <p id="home_about_me"> Hey! I'm an aspiring computer scientist traversing the World Wide Web. Follow me as I continue to hone my skills.</p>
+                    </div>
+                    <div class="welcome_info">
+                        <img src="Welcome.png" id="welcome_img">
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+            <div class="standard_header">
+                <div class="standard_subheader">
+                    <h5>ABOUT</h5>
+                </div>
+            </div>
+            <div class="about_page page container">
+                <div class="about_info">
+                    <div class="about_info_text">
+                        <p><span id="about_hello">Hello!</span><br><br> My name is Andy Nguyen. I'm a Vietnamese descent who grew up in Fort Worth, Texas. I attend Saginaw High School before (hopefully) gaining addmsion into CS program in UT Austin. Currently, I'm working on various persoal independent projects, such as creating responsive video games and website, to devolope my skills as a computer sciencist.</p>
+                    </div>
+                </div>
+                <div class="about_info_img">
+                    <img src="schoolPhoto.png" id="school_photo_img">
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <section>
+            
+            <div class="standard_header">
+                <div class="standard_subheader">
+                   <h5>PROJECT</h5>
+                </div>
+            </div>
+            <div class="project_page page">
+                <div class="slider">
+                    <div class="slide_track">
+                        <div class="slide">
+                            <img src="websiteImg.avif">
+                            
+                        </div>
+                        <div class="slide">
+                            <img src="noProjectPic.avif">
+                        
+                        </div>
+                        <div class="slide">
+                            <img src="websiteImg.avif">
+                            
+                        </div>
+                        <div class="slide">
+                            <img src="noProjectPic.avif">
+                            
+                        </div>
+                        <div class="slide">
+                            <img src="websiteImg.avif">
+                            
+                        </div>
+                        <div class="slide">
+                            <img src="noProjectPic.avif">
+                            
+                        </div>
+                        <div class="slide">
+                            <img src="websiteImg.avif">
+                            
+                        </div>
+                        <div class="slide">
+                            <img src="noProjectPic.avif">
+                            
+                        </div>
+                        <div class="slide">
+                            <img src="websiteImg.avif">
+                            
+                        </div>
+                        <div class="slide">
+                            <img src="noProjectPic.avif">
+                            
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            
+            
+        </section>
+        <section>
+            <div class="standard_header">
+                <div class="standard_subheader">
+                   <h5>CONTACT</h5>
+                </div>
+            </div>
+            <div class="contact_intro container">
+                <p>Do you have any question for me? Any advice to give? Email me at <span style="color:#e0af31">9andyN@gmail.com</span> or fill out the form below.</p>
+            </div>
+            <div class="contact_page page">
+               <div class="contact_image_container">
+                    <img src ="https://images.unsplash.com/photo-1577563908411-5077b6dc7624?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjJ8fGVtYWlsfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60">
+               </div>
+               <div class="contact_message_container">
+                    <form action="https://formsubmit.co/9andyN@gmail.com" method="POST" class="message_form">
+                        <div class="name_inputs inputs">
+                            <label for="name">NAME:</label><br>
+                            <input type="text" name="name" id="name" required>
+                        </div>
+                        <div class="email_input inputs">
+                            <label for="email">EMAIL:</label><br>
+                            <input type="email" name="email" id="email" required>
+                        </div>
+                        <div class="topic_input inputs">
+                            <label for="topic">TOPIC:</label><br>
+                            <input types="text" name="topic" id="topic" required>
+                        </div>
+                        <div class="message_input inputs">
+                            <label for="message">MESSAGE:</label><br>
+                            <textarea name="message" id="message" rows="6" cols="50"></textarea>
+                        </div>
+                        <div class="sumbit_input inputs">
+                            <button type="submit" id="sumbit">SUMBIT</button>
+                        </div>
+                    </form>
+               </div>
+            </div>
+        </section>
+    </body>
